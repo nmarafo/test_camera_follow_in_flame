@@ -26,9 +26,9 @@ class MainGamePage extends StatelessWidget {
                       const SizedBox(height: 50,),
                       Expanded(child: Container()),
                       const CircularProgressIndicator(),
-                      Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Text('loading'.tr),
+                      const Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text('loading'),
                       ),
                       Expanded(child: Container()),
                       Padding(
