@@ -34,7 +34,8 @@ class StageOne extends Forge2DGame with HasTappables,HasDraggables,HasKeyboardHa
 
     await add(player)?.then((value) {
       camera.followBodyComponent(player,
-        worldBounds: const Rect.fromLTWH(-500, -1000, 2*500, 2*500)
+        relativeOffset: Anchor(Anchor.bottomCenter.x,Anchor.bottomCenter.y-0.15)
+        //worldBounds: const Rect.fromLTWH(-500, -1000, 2*500, 2*500) // in fullscreen lost perspective I dont know why
       );
     });
 
